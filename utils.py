@@ -34,7 +34,7 @@ def plotGeneratedBatch(X_real, X_gen, localPath):
     Xg = X_gen[:8]
     Xr = X_real[:8]
         
-    ax = 0 if K.image_dim_ordering() == "tf" else 1
+    ax = 1
         
     X = np.concatenate((Xg, Xr), axis=0)
     list_rows = []
