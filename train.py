@@ -100,8 +100,9 @@ class GANTrainer:
 					else:
 						genName = '/currentGeneratorSample.png'
 						discName = '/currentDiscriminatorSample.png'
-					utils.plotGeneratedBatch(real, gen, path + genName)
-					utils.plotGeneratedBatch(self.discriminator.predict(real), target, path + discName)
+					# utils.plotGeneratedBatch(real, gen, path + genName)
+					# utils.plotGeneratedBatch(self.discriminator.predict(real), target, path + discName)
+					
 	
 	
 			print('\nEpoch {}/{}, Time: {}'.format(e + 1, nb_epoch, time.time() - start))
